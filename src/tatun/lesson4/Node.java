@@ -26,8 +26,7 @@ public class Node {
         if (this == o) return true;
         if (!(o instanceof Node)) return false;
         Node node = (Node) o;
-        return age == node.age &&
-                Objects.equals(name, node.name);
+        return age == node.age && name.equals(node.name);
     }
 
     @Override
